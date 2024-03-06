@@ -6,7 +6,7 @@ import java.util.List;
 import static jaos.TokenType.*;
 
 /**
- * Object with functions to convert a String contaning the code into a list of Tokens
+ * Object with functions to convert a String containing the code into a list of Tokens
  */
 class Scanner {
     private final String source;
@@ -85,7 +85,7 @@ class Scanner {
 
     /**
      * read the next character
-     * @return
+     * @return next character in the source string
      */
     private char advance() {
         return source.charAt(current++);

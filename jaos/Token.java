@@ -1,10 +1,10 @@
 package jaos;
 
 /**
- * @Type One of the possible TokenTypes (IDENTIFIER, SEMICOLON, CLASS, ...)
- * @Lexeme The actual word or symbol (var, while, !=, while...)
- * @Literal Stored values ()
- * @Line The line of the file where the Token is located
+ * {@code @Type} One of the possible TokenTypes (IDENTIFIER, SEMICOLON, CLASS, ...)<br>
+ * {@code @Lexeme} The actual word or symbol (var, while, !=, while, ...)<br>
+ * {@code @Literal} Stored values (5.4, "string", True, ...)<br>
+ * {@code @Line} The line of the file where the Token is located<br>
  */
 class Token {
     final TokenType type;
