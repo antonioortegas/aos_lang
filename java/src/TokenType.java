@@ -1,4 +1,4 @@
-package java;
+package java.src;
 
 /**
  * Describes all the possible types a single Token object can be

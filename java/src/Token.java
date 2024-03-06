@@ -1,4 +1,4 @@
-package java;
+package java.src;
 
 /**
  * @Type One of the possible TokenTypes (IDENTIFIER, SEMICOLON, CLASS, ...)

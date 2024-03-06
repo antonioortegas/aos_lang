@@ -1,4 +1,4 @@
-package java;
+package java.src;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,6 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
-import java.Scanner;
 
 public class Aos {
     static boolean hadError = false; // Ensures incorrect code is not run
@@ -15,13 +14,13 @@ public class Aos {
     /**
      * This is the entry point
      * The usage is 
-     * If provided with more arguments, the user will ve promted with an error, indicating the correct sysntax
+     * If provided with more arguments, the user will ve prompted with an error, indicating the correct syntax
      * Provided the program is given an argument (path) indicating the script to be run, it will process the file
      * If given no path, an interactive command prompt will appear
      */
     public static void main(String[] args) throws IOException {
         if (args.length > 1) {
-            System.out.println("Usage: jlox [script]");
+            System.out.println("Usage: aos [script]");
             System.exit(64);
         } else if (args.length == 1) {
             runFile(args[0]);
@@ -32,7 +31,7 @@ public class Aos {
 
     /**
      * Given a path, it will digest it and get an array of all the bytes in the file, which convert into a String
-     * the run function is then given the array so it can be interpreted
+     * the run function is then given the array, so it can be interpreted
      * @param path The path to the file to be compiled and run
      */
     private static void runFile(String path) throws IOException {
@@ -45,7 +44,7 @@ public class Aos {
 
     /**
      * When the main program is not given a path, it will display an interactive prompt.
-     * To exit gracefully, the promt listens for an end of file character.
+     * To exit gracefully, the prompt listens for an end of file character.
      * This can be achieved by using "Ctrl + D"
      */
     private static void runPrompt() throws IOException {
