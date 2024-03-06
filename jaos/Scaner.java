@@ -1,9 +1,9 @@
-package java.src;
+package jaos;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static java.src.TokenType.*;
+import static jaos.TokenType.*;
 
 /**
  * Object with functions to convert a String contaning the code into a list of Tokens

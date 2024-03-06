@@ -1,4 +1,4 @@
-package java.src;
+package jaos;
 
 /**
  * @Type One of the possible TokenTypes (IDENTIFIER, SEMICOLON, CLASS, ...)

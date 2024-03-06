@@ -1,4 +1,4 @@
-package java.src;
+package jaos;
 
 /**
  * Describes all the possible types a single Token object can be
